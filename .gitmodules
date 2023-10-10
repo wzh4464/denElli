@@ -1,0 +1,6 @@
+[submodule "ELSDc"]
+	path = ELSDc
+	url = https://github.com/wzh4464/ELSDc.git
+[submodule "big_matrix_cocluster"]
+	path = big_matrix_cocluster
+	url = https://github.com/wzh4464/big_matrix_cocluster.git
