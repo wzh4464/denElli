@@ -10,7 +10,7 @@ if __name__ == "__main__":
     # read data/nturgb/video_0.py
     datasize = 600
     coclusterer = []
-    
+    PARALLEL = False
     # for i in range(datasize):
     #     A = np.load('data/nturgb/video_' + str(i) + '.npy')
     #     # A (103, 25, 150)
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #     coclusterer.append(ccSVD.coclusterer(
     #         A, A.shape[0], A.shape[1]))
     #     result = coclusterer[-1].cocluster(10e-1, 3, 5, True)
-    
+
     # parallelized
     # result is coclusterer list
     def cocluster(i):
@@ -31,9 +31,13 @@ if __name__ == "__main__":
             A, A.shape[0], A.shape[1]))
         coclusterer[-1].cocluster(10e-1, 3, 5, True)
         return True
-    
-    with Pool(mp.cpu_count()) as p:
-        p.map(cocluster, range(datasize))
+
+    if PARALLEL:
+        with Pool(mp.cpu_count()-5) as p:
+            p.map(cocluster, range(datasize))
+    else:
+        # just do it for video_0
+        cocluster(0)
 
     fig, axs = plt.subplots(len(coclusterer), 2)
     for i in range(len(coclusterer)):
