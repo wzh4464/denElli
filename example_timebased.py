@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 if __name__ == "__main__":
     # read data/nturgb/video_0.py
-    datasize = 600
+    datasize = 45
     coclusterer = []
     PARALLEL = True
     # for i in range(datasize):
@@ -31,6 +31,7 @@ if __name__ == "__main__":
         coclusterI = ccSVD.coclusterer(
             A, A.shape[0], A.shape[1])
         coclusterI.cocluster(10e-1, 3, 5, True)
+        coclusterI.saveNewMat('result/nturgb/video_' + str(i) + '.npy')
         return coclusterI
 
     if PARALLEL:
