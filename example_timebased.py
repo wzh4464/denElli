@@ -38,11 +38,26 @@ if __name__ == "__main__":
     else:
         # just do it for video_0
         cocluster(0)
+        cocluster(1)
+        
+    # print length of coclusterer
+    print(len(coclusterer))
 
     fig, axs = plt.subplots(len(coclusterer), 2)
+    print('shape of axs: ' + str(axs.shape))
     for i in range(len(coclusterer)):
         axs[i, 0].imshow(coclusterer[i].matrix)
         axs[i, 1].imshow(coclusterer[i].newMat)
+        
+        
+    # set high dpi for saving
+    fig.set_dpi(600)
     # plt.show()
     # save to result/
     plt.savefig('result/nturgb.png')
+    
+    # # save newMat to result/newMat.npy
+    np.save('result/newMat_0.npy', coclusterer[0].newMat)
+    np.save('result/newMat_1.npy', coclusterer[1].newMat)
+    
+    
