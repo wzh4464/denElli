@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Monday, 30th October 2023 9:59:22 pm
+Last Modified: Tuesday, 31st October 2023 10:42:26 am
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -85,11 +85,7 @@ if __name__ == "__main__":
         A = np.load('data/nturgb/video_0.npy')
         # print 10*10 of A
         print(A[0, 0:25, 0:25])
-        ccl = cocluster(0)
-
-        score = ccSVD.scoreInd(
-            A[0, :, :], np.arange(20, 25), np.arange(15, 20))
-        print(score)
+        ccl = cocluster_timebase(0)
 
         ccl.printBiclusterList()
         ccl.imageShowBicluster(save=True, filename='result/nturgb_bicluster.png')

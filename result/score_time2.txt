@@ -1,0 +1,6 @@
+score time: 110.55524516105652
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 2598
+submatrix_2.npy
+-----
