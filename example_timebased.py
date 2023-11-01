@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Monday, 30th October 2023 9:54:22 pm
+Last Modified: Wednesday, 1st November 2023 10:15:19 am
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 from multiprocessing import Pool
 import multiprocessing as mp
 from tqdm import tqdm
+import cProfile
 
 if __name__ == "__main__":
     # np print style
@@ -28,11 +29,14 @@ if __name__ == "__main__":
     np.set_printoptions(precision=3)
     # use up the width of the terminal
     np.set_printoptions(linewidth=np.inf)
+    # disable scientific notation
+    np.set_printoptions(suppress=True)
 
     # read data/nturgb/video_0.py
     datasize = 600
     coclusterer = []
     PARALLEL = False
+    DEBUG = True
     # for i in range(datasize):
     #     A = np.load('data/nturgb/video_' + str(i) + '.npy')
     #     # A (103, 25, 150)
@@ -49,6 +53,12 @@ if __name__ == "__main__":
         # A (103, 25, 150)
         # reshape to (103, 25*150)
         A = A.reshape(A.shape[0], A.shape[1]*A.shape[2])
+
+        if DEBUG:
+            print('frame: ' + str(i))
+            print(A.shape)
+            print('--------------------------')
+
         coclusterI = ccSVD.coclusterer(
             A, A.shape[0], A.shape[1], debug=True)
         coclusterI.cocluster(10e-1, 3, 5, True)
@@ -60,8 +70,8 @@ if __name__ == "__main__":
 
         A = A[0, :, :]
         coclusterI = ccSVD.coclusterer(
-            A, A.shape[0], A.shape[1], debug=True)
-        coclusterI.cocluster(10e-1, 3, 5, True)
+            A, A.shape[0], A.shape[1], debug=DEBUG)
+        coclusterI.cocluster(10e-1, 3, 5, atomOrNot=True)
         return coclusterI
 
     if PARALLEL:
@@ -84,11 +94,19 @@ if __name__ == "__main__":
         A = np.load('data/nturgb/video_0.npy')
         # print 10*10 of A
         print(A[0, 0:25, 0:25])
-        ccl = cocluster(0)
+        # ccl = cocluster(0)
+        cProfile.run('cocluster_timebase(0)', 'result/profile.txt')
 
-        score = ccSVD.scoreInd(
-            A[0, :, :], np.arange(20, 25), np.arange(15, 20))
-        print(score)
+        # save cprofile result
+        import pstats
+        # FileNotFoundError: [Errno 2] No such file or directory: 'result/profile.txt'
+        
+        p = pstats.Stats('result/profile.txt')
+        p.sort_stats('cumulative').print_stats(10)
 
-        ccl.printBiclusterList()
-        ccl.imageShowBicluster(save=False)
+        # score = ccSVD.scoreInd(
+        #     A[0, :, :], np.arange(20, 25), np.arange(15, 20))
+        # print(score)
+
+        # ccl.printBiclusterList()
+        # ccl.imageShowBicluster(save=False)
