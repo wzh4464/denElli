@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Tuesday, 31st October 2023 10:42:26 am
+Last Modified: Wednesday, 1st November 2023 6:13:29 pm
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -21,6 +21,9 @@ import matplotlib.pyplot as plt
 from multiprocessing import Pool
 import multiprocessing as mp
 from tqdm import tqdm
+import time
+import os
+import sys
 
 if __name__ == "__main__":
     # np print style
@@ -28,11 +31,14 @@ if __name__ == "__main__":
     np.set_printoptions(precision=3)
     # use up the width of the terminal
     np.set_printoptions(linewidth=np.inf)
+    # disable scientific notation
+    np.set_printoptions(suppress=True)
 
     # read data/nturgb/video_0.py
     datasize = 45
     coclusterer = []
-    PARALLEL = False
+    PARALLEL = True
+    DEBUG = True
     # for i in range(datasize):
     #     A = np.load('data/nturgb/video_' + str(i) + '.npy')
     #     # A (103, 25, 150)
@@ -49,43 +55,41 @@ if __name__ == "__main__":
         # A (103, 25, 150)
         # reshape to (103, 25*150)
         A = A.reshape(A.shape[0], A.shape[1]*A.shape[2])
+
+        if DEBUG:
+            print('frame: ' + str(i))
+            print(A.shape)
+            print('--------------------------')
+
         coclusterI = ccSVD.coclusterer(
             A, A.shape[0], A.shape[1], debug=True)
         coclusterI.cocluster(10e-1, 3, 5, True)
         return coclusterI
 
-    def cocluster(i):
-        A = np.load('data/nturgb/video_0.npy')
-        # A (103, 25, 150)
+    B = np.load('data/nturgb/video_0.npy')
+    B = B.reshape(B.shape[0], B.shape[1]*B.shape[2])
+    subI = np.ones(B.shape[0], dtype=bool)
+    subJ = np.ones(B.shape[1], dtype=bool)
+    r1, r2 = ccSVD.estimateRank(B, subI, subJ)
+    coclusterer = ccSVD.coclusterer(B, B.shape[0], B.shape[1], debug=False)
 
-        A = A[0, :, :]
-        coclusterI = ccSVD.coclusterer(
-            A, A.shape[0], A.shape[1], debug=True)
-        coclusterI.cocluster(10e-1, 3, 5, True)
-        coclusterI.saveNewMat('result/nturgb/video_' + str(i) + '.npy')
-        return coclusterI
+    def wrapper(args):
+        return coclusterer.cocluster(*args)
 
     if PARALLEL:
-        with Pool(mp.cpu_count()-4) as p:
-            # p.map(cocluster, range(datasize))
-            # use tqdm to show progress
+        poolArgList = [(10e-2, i, j, True)
+                       for i in range(r1, r2) for j in range(r1, r2)]
+        with mp.Pool(mp.cpu_count()-4) as p:
             results = list(
-                tqdm(p.imap(cocluster_timebase, range(datasize)), total=datasize))
-        fig, axs = plt.subplots(len(results), 2)
-        for i in range(len(results)):
-            axs[i, 0].imshow(results[i].matrix)
-            axs[i, 1].imshow(results[i].newMat)
-        # plt.show()
-        # save to result/
-        plt.savefig('result/nturgb.png')
-    else:
-        # show original matrix first
-        # show 10*10 first of them
-        # use numpy to print
-        A = np.load('data/nturgb/video_0.npy')
-        # print 10*10 of A
-        print(A[0, 0:25, 0:25])
-        ccl = cocluster_timebase(0)
+                tqdm(p.imap(wrapper, poolArgList), total=len(poolArgList)))
 
-        ccl.printBiclusterList()
-        ccl.imageShowBicluster(save=True, filename='result/nturgb_bicluster.png')
+        path = 'result/timebased/r1r2_'
+
+        p.join()
+        for i in range(len(results)):
+            results[i].printBiclusterList(
+                save=True, path=path + str(i // (r2-r1)) + '_' + str(i % (r2-r1)) + '.txt')
+
+    else:
+        coclusterer.cocluster(10e-1, 3, 5, True)
+        coclusterer.printBiclusterList()
