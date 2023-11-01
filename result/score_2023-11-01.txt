@@ -1,0 +1,90 @@
+score time: 2.8623480796813965
+X.shape: (103, 3750)
+subrowI.shape: 29
+subcolJ.shape: 470
+score: 0.0011636601273175007
+-----
+score time: 0.9397091865539551
+X.shape: (103, 3750)
+subrowI.shape: 29
+subcolJ.shape: 300
+score: 0.000390129451926291
+-----
+score time: 0.6829349994659424
+X.shape: (103, 3750)
+subrowI.shape: 29
+subcolJ.shape: 256
+score: 0.0021061610005704834
+-----
+score time: 73.69686031341553
+X.shape: (103, 3750)
+subrowI.shape: 29
+subcolJ.shape: 2566
+score: 0.00011869393615637769
+-----
+score time: 0.4234280586242676
+X.shape: (103, 3750)
+subrowI.shape: 29
+subcolJ.shape: 158
+score: 0.0003708228549970105
+-----
+score time: 2.9177629947662354
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 470
+score: 0.0005880899639342241
+-----
+score time: 0.9341528415679932
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 300
+score: 0.0003104263327833312
+-----
+score time: 0.6857700347900391
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 256
+score: 0.000878028447043544
+-----
+score time: 72.63002181053162
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 2566
+score: 6.859927901836649e-05
+-----
+score time: 0.43354129791259766
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 158
+score: 0.0003112012264306907
+-----
+score time: 2.7918338775634766
+X.shape: (103, 3750)
+subrowI.shape: 41
+subcolJ.shape: 470
+score: 0.000665071266443773
+-----
+score time: 0.9634099006652832
+X.shape: (103, 3750)
+subrowI.shape: 41
+subcolJ.shape: 300
+score: 0.0002539023246428407
+-----
+score time: 0.6906437873840332
+X.shape: (103, 3750)
+subrowI.shape: 41
+subcolJ.shape: 256
+score: 0.0010608987240261492
+-----
+score time: 75.30297422409058
+X.shape: (103, 3750)
+subrowI.shape: 41
+subcolJ.shape: 2566
+score: 6.822485298962899e-05
+-----
+score time: 0.29371213912963867
+X.shape: (103, 3750)
+subrowI.shape: 41
+subcolJ.shape: 158
+score: 0.00019833810316227662
+-----

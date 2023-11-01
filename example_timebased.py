@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Wednesday, 1st November 2023 10:15:19 am
+Last Modified: Wednesday, 1st November 2023 9:57:54 pm
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -62,6 +62,7 @@ if __name__ == "__main__":
         coclusterI = ccSVD.coclusterer(
             A, A.shape[0], A.shape[1], debug=True)
         coclusterI.cocluster(10e-1, 3, 5, True)
+        coclusterI.printBiclusterList(save=True, path='result/bicluster.txt')
         return coclusterI
 
     def cocluster(i):
@@ -95,13 +96,13 @@ if __name__ == "__main__":
         # print 10*10 of A
         print(A[0, 0:25, 0:25])
         # ccl = cocluster(0)
-        cProfile.run('cocluster_timebase(0)', 'result/profile.txt')
+        cProfile.run('cocluster_timebase(0)', 'result/profile_svd.txt')
 
         # save cprofile result
         import pstats
         # FileNotFoundError: [Errno 2] No such file or directory: 'result/profile.txt'
         
-        p = pstats.Stats('result/profile.txt')
+        p = pstats.Stats('result/profile_svd.txt')
         p.sort_stats('cumulative').print_stats(10)
 
         # score = ccSVD.scoreInd(

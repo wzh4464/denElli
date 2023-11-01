@@ -1,0 +1,557 @@
+Wed Nov  1 11:55:26 2023    result/profile_binary.txt
+
+         503192571 function calls (503192449 primitive calls) in 242.282 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000  242.282  242.282 {built-in method builtins.exec}
+        1    0.000    0.000  242.282  242.282 <string>:1(<module>)
+        1    0.000    0.000  242.282  242.282 /Users/zihanwu/Public/codes/denElli/example_timebased.py:51(cocluster_timebase)
+        1    0.000    0.000  242.281  242.281 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:71(cocluster)
+        1    0.010    0.010  242.281  242.281 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:118(coclusterAtom)
+        1    0.004    0.004  242.175  242.175 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:420(compute_scoreMat)
+       15   97.834    6.522  242.171   16.145 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:287(score)
+ 62890674   76.851    0.000  138.522    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:2383(norm)
+ 62890674   24.603    0.000   24.603    0.000 {method 'dot' of 'numpy.ndarray' objects}
+ 62890674   19.514    0.000   19.514    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+ 62890676    8.224    0.000   11.177    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:140(isComplexType)
+125781529    5.999    0.000    5.999    0.000 {built-in method builtins.issubclass}
+ 62890674    4.004    0.000    4.004    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:2379(_norm_dispatcher)
+ 62890743    3.332    0.000    3.332    0.000 {built-in method numpy.asarray}
+       30    1.755    0.058    1.755    0.058 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:393(corHelper)
+        2    0.000    0.000    0.049    0.024 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:1135(wrapper)
+        2    0.000    0.000    0.048    0.024 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1447(fit)
+        1    0.041    0.041    0.041    0.041 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:1499(svd)
+        2    0.000    0.000    0.019    0.010 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:916(_check_mkl_vcomp)
+        1    0.000    0.000    0.019    0.019 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:80(threadpool_info)
+        3    0.000    0.000    0.019    0.006 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:59(_get_threadpool_controller)
+        1    0.000    0.000    0.019    0.019 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:664(__init__)
+        1    0.000    0.000    0.019    0.019 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:815(_load_libraries)
+        1    0.000    0.000    0.019    0.019 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:861(_find_libraries_with_dyld)
+       30    0.008    0.000    0.019    0.001 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:252(scoreHelper)
+      377    0.001    0.000    0.018    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:942(_make_controller_from_path)
+      377    0.000    0.000    0.016    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:393(_realpath)
+      377    0.000    0.000    0.016    0.000 <frozen posixpath>:412(realpath)
+      377    0.003    0.000    0.014    0.000 <frozen posixpath>:421(_joinrealpath)
+       69    0.014    0.000    0.014    0.000 {built-in method numpy.zeros}
+      362    0.010    0.000    0.010    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        2    0.000    0.000    0.010    0.005 {built-in method sklearn.utils._openmp_helpers._openmp_effective_n_threads}
+        1    0.000    0.000    0.010    0.010 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/parallel.py:615(cpu_count)
+        1    0.000    0.000    0.010    0.010 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:83(cpu_count)
+        1    0.000    0.000    0.010    0.010 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:232(_count_physical_cores)
+        1    0.000    0.000    0.010    0.010 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:506(run)
+      188    0.002    0.000    0.010    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)
+        2    0.000    0.000    0.009    0.005 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:960(_init_centroids)
+        2    0.001    0.000    0.009    0.005 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:178(_kmeans_plusplus)
+      223    0.001    0.000    0.008    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)
+        1    0.000    0.000    0.008    0.008 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:807(__init__)
+        1    0.000    0.000    0.008    0.008 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1789(_execute_child)
+        2    0.006    0.003    0.007    0.003 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:611(_kmeans_single_lloyd)
+     3170    0.007    0.000    0.007    0.000 {built-in method posix.lstat}
+       15    0.000    0.000    0.006    0.000 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/bicluster.py:34(__init__)
+       15    0.005    0.000    0.006    0.000 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/bicluster.py:50(idxtoLabel)
+        8    0.000    0.000    0.006    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/metrics/pairwise.py:341(_euclidean_distances)
+        8    0.001    0.000    0.005    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/metrics/pairwise.py:524(_euclidean_distances_upcast)
+        4    0.005    0.001    0.005    0.001 {built-in method posix.read}
+       18    0.005    0.000    0.005    0.000 {built-in method io.open}
+       30    0.005    0.000    0.005    0.000 {method 'rand' of 'numpy.random.mtrand.RandomState' objects}
+     3199    0.003    0.000    0.004    0.000 <frozen posixpath>:71(join)
+       15    0.004    0.000    0.004    0.000 {method '__exit__' of '_io._IOBase' objects}
+       32    0.002    0.000    0.003    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:135(_var)
+       30    0.001    0.000    0.003    0.000 {method 'any' of 'numpy.ndarray' objects}
+       30    0.000    0.000    0.003    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3513(std)
+       30    0.000    0.000    0.003    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:204(_std)
+       17    0.000    0.000    0.003    0.000 <frozen posixpath>:150(dirname)
+       23    0.003    0.000    0.003    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:159(safe_sparse_dot)
+        1    0.003    0.003    0.003    0.003 {built-in method _posixsubprocess.fork_exec}
+       30    0.000    0.000    0.002    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:55(_any)
+      397    0.002    0.000    0.002    0.000 {method 'rfind' of 'str' objects}
+        2    0.002    0.001    0.002    0.001 {method 'choice' of 'numpy.random.mtrand.RandomState' objects}
+        1    0.000    0.000    0.002    0.002 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1165(communicate)
+        1    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:2055(_communicate)
+       57    0.001    0.000    0.001    0.000 {method 'astype' of 'numpy.ndarray' objects}
+       16    0.001    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/index_tricks.py:34(ix_)
+       53    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:54(row_norms)
+       53    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/einsumfunc.py:1009(einsum)
+       53    0.001    0.000    0.001    0.000 {built-in method numpy.core._multiarray_umath.c_einsum}
+        2    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:402(select)
+     4351    0.001    0.000    0.001    0.000 <frozen posixpath>:41(_get_sep)
+        2    0.001    0.000    0.001    0.000 {method 'poll' of 'select.poll' objects}
+     1508    0.001    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:987(_check_prefix)
+      377    0.000    0.000    0.001    0.000 <frozen posixpath>:397(abspath)
+     5507    0.001    0.000    0.001    0.000 {built-in method posix.fspath}
+       23    0.001    0.000    0.001    0.000 {built-in method posix.stat}
+       17    0.000    0.000    0.001    0.000 <frozen genericpath>:16(exists)
+      185    0.001    0.000    0.001    0.000 {built-in method builtins.getattr}
+     8104    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+        4    0.000    0.000    0.001    0.000 {built-in method builtins.print}
+       75    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:287(helper)
+        1    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:1595(_array_str_implementation)
+        1    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:561(array2string)
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:509(_validate_data)
+        1    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:506(wrapper)
+        1    0.000    0.000    0.001    0.001 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:523(_array2string)
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:644(check_array)
+      754    0.000    0.000    0.001    0.000 <frozen posixpath>:60(isabs)
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1415(_check_params_vs_input)
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:863(_check_params_vs_input)
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:283(_tolerance)
+       75    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:104(__init__)
+     5939    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3654(var)
+        6    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:1118(stable_cumsum)
+       30    0.001    0.000    0.001    0.000 {built-in method time.time}
+        2    0.000    0.000    0.001    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:630(_validate_params)
+       16    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2836(min)
+        6    0.000    0.000    0.000    0.000 {method 'uniform' of 'numpy.random.mtrand.RandomState' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:780(_formatArray)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:360(_asarray_with_order)
+    104/1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:789(recurser)
+    11886    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      381    0.000    0.000    0.000    0.000 <frozen posixpath>:140(basename)
+      377    0.000    0.000    0.000    0.000 <frozen posixpath>:389(normpath)
+     3170    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+       19    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/__init__.py:386(__getattr__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:106(__init__)
+     3179    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+       19    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/__init__.py:393(__getitem__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/npyio.py:282(load)
+       34    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numerictypes.py:357(issubdtype)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1249(check_random_state)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:997(_warn_if_incompatible_openmp)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2249(isclose)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/textwrap.py:419(dedent)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:452(_get_format_function)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:1012(_get_libc)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:26(validate_parameter_constraints)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:178(get_params)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:738(read_array)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:411(<lambda>)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:907(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:147(_get_param_names)
+      150    0.000    0.000    0.000    0.000 {built-in method builtins.next}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:934(fillFormat)
+       30    0.000    0.000    0.000    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/__init__.py:178(sub)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/__init__.py:342(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/__init__.py:272(_compile)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/util.py:72(find_library)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:3278(signature)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:125(dyld_find)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)
+       24    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:53(_wrapfunc)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:3024(from_callable)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:69(threadpool_limits)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:718(limit)
+       75    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:141(__exit__)
+        2    0.000    0.000    0.000    0.000 {method 'mean' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.fromfile}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2428(_signature_from_callable)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:675(info)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:677(<listcomp>)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:429(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:738(compile)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:115(info)
+       75    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:132(__enter__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:92(_assert_all_finite)
+     3020    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISLNK}
+       18    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:73(<listcomp>)
+      377    0.000    0.000    0.000    0.000 {built-in method posix._path_normpath}
+       36    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)
+      144    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:452(_no_nep50_warning)
+    28/26    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:102(make_constraint)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2330(within_tol)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:133(num_threads)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1282(_close_pipe_fds)
+      223    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)
+      377    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/__init__.py:515(string_at)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2333(_signature_from_function)
+      103    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:753(_extendLine_pretty)
+       20    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2378(array_equal)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:166(get_num_threads)
+        3    0.000    0.000    0.000    0.000 {method 'copy' of 'numpy.ndarray' objects}
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:176(set_num_threads)
+        3    0.000    0.000    0.000    0.000 {built-in method _ctypes.dlopen}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2512(cumsum)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:972(parse)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:78(inner)
+      103    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:1018(__call__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:220(_cpu_count_user)
+        6    0.000    0.000    0.000    0.000 {method 'cumsum' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:440(__exit__)
+       18    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2421(all)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:450(restore_original_limits)
+        2    0.000    0.000    0.000    0.000 {function SeedSequence.generate_state at 0x101c68180}
+      104    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:989(<genexpr>)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:449(_parse_sub)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:184(_cpu_count_affinity)
+       38    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:61(_all)
+       22    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:33(seterr)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:347(__init__)
+      103    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:739(_extendLine)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/__init__.py:331(__init__)
+       66    0.000    0.000    0.000    0.000 <frozen abc>:117(__instancecheck__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:187(get_version)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/__init__.py:334(_init)
+       11    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:430(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:162(set_additional_attributes)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1236(argmin)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/__init__.py:713(create_time)
+       66    0.000    0.000    0.000    0.000 {built-in method _abc._abc_instancecheck}
+      2/1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/_psosx.py:343(wrapper)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/_psosx.py:469(create_time)
+       68    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numerictypes.py:283(issubclass_)
+       20    0.000    0.000    0.000    0.000 {method 'all' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/_common.py:470(wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:509(callback)
+       24    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1878(<genexpr>)
+       18    0.000    0.000    0.000    0.000 {method 'all' of 'numpy.generic' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/_psosx.py:369(_get_kinfo_proc)
+       10    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:496(is_satisfied_by)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:509(_parse)
+      206    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.dragon4_positional}
+       39    0.000    0.000    0.000    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+      104    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:984(<genexpr>)
+      116    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 {built-in method psutil._psutil_osx.proc_kinfo_oneshot}
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:209(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:587(_read_array_header)
+       20    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2686(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:547(_set_threadpool_limits)
+       20    0.000    0.000    0.000    0.000 {method 'sum' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:571(_code)
+       16    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:183(wrapper)
+      383    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+       26    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:32(get_config)
+        6    0.000    0.000    0.000    0.000 {method 'argmin' of 'numpy.ndarray' objects}
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:196(config_context)
+      114    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/scipy/sparse/_base.py:1461(issparse)
+        6    0.000    0.000    0.000    0.000 {built-in method _ctypes._dyld_shared_cache_contains_path}
+        6    0.000    0.000    0.000    0.000 <frozen genericpath>:27(isfile)
+  911/910    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       20    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:47(_sum)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:351(register)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:50(set_config)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:204(_get_threading_layer)
+    38/35    0.000    0.000    0.000    0.000 <frozen abc>:121(__subclasscheck__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/utils.py:1027(safe_eval)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)
+       10    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:480(__contains__)
+       11    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:435(__exit__)
+      377    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ast.py:54(literal_eval)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:558(__init__)
+        7    0.000    0.000    0.000    0.000 <frozen _collections_abc>:771(get)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/twodim_base.py:234(diag)
+       72    0.000    0.000    0.000    0.000 {method 'reset' of '_contextvars.ContextVar' objects}
+       22    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:132(geterr)
+       72    0.000    0.000    0.000    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:234(register)
+       47    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/__init__.py:736(gen_batches)
+    38/35    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+      265    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/einsumfunc.py:1001(_einsum_dispatcher)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1259(wait)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:220(_get_architecture)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:272(_is_arraylike_not_scalar)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:103(dyld_default_search)
+        8    0.000    0.000    0.000    0.000 <frozen os>:674(__getitem__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:509(_compile_info)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:75(dyld_override_search)
+       30    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:24(_get_threadlocal_config)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2100(clip)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2972(__init__)
+      227    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+      188    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:92(dyld_executable_path_search)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:274(full)
+       88    0.000    0.000    0.000    0.000 {built-in method numpy.asanyarray}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1787(_check_sample_weight)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:546(__exit__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/framework.py:19(framework_info)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:330(_num_samples)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:2014(_wait)
+        2    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:432(__init__)
+       22    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/enum.py:686(__call__)
+      104    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:993(<genexpr>)
+        4    0.000    0.000    0.000    0.000 {method 'close' of '_io.TextIOWrapper' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:282(isdtype)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:454(_create_cb_wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/random.py:800(getrandbits)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ast.py:33(parse)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:215(_fileobj_lookup)
+        1    0.000    0.000    0.000    0.000 <frozen os>:619(get_exec_path)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1686(_get_handles)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:64(_make_options_dict)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1332(searchsorted)
+        6    0.000    0.000    0.000    0.000 {method 'clip' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:75(isdtype)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/warnings.py:466(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2692(max)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:67(zeros_like)
+       15    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
+      104    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:994(<genexpr>)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:61(dyld_image_suffix_search)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:365(unregister)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:21(_fileobj_to_fd)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:583(__init__)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/warnings.py:165(simplefilter)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:44(dyld_image_suffix)
+       24    0.000    0.000    0.000    0.000 <frozen os>:806(fsencode)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:148(_cpu_count_cgroup)
+       75    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:460(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1389(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'match' of 're.Pattern' objects}
+        2    0.000    0.000    0.000    0.000 <frozen os>:773(getenv)
+       16    0.000    0.000    0.000    0.000 {built-in method numpy.empty}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:591(is_satisfied_by)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:82(<genexpr>)
+      105    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method posix.urandom}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:90(_clip)
+        5    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:70(_is_numpy_namespace)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:161(<listcomp>)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:347(get_num_threads)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:566(is_satisfied_by)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:247(unregister)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:224(__init__)
+        3    0.000    0.000    0.000    0.000 {built-in method posix.pipe}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:618(__init__)
+       22    0.000    0.000    0.000    0.000 {built-in method numpy.seterrobj}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:374(_check_n_features)
+        8    0.000    0.000    0.000    0.000 <frozen os>:756(encode)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/warnings.py:181(_add_filter)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:441(_check_params)
+       22    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:3019(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:87(_isdtype_single)
+       13    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:227(__getattr__)
+       36    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+        6    0.000    0.000    0.000    0.000 {method 'searchsorted' of 'numpy.ndarray' objects}
+       16    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:254(get)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:1855(isscalar)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:567(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:735(unwrap)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:136(ones)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:2001(_try_wait)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:496(_check_params)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/enum.py:1516(__and__)
+       27    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:527(_push_exit_callback)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:626(is_satisfied_by)
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+     10/1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ast.py:84(_convert)
+      103    0.000    0.000    0.000    0.000 {method 'splitlines' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:844(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:420(_check_feature_names)
+       54    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:351(set_num_threads)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:37(_compile)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:405(parent)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.cpu_count}
+       12    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:292(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:174(getwidth)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:627(<genexpr>)
+        6    0.000    0.000    0.000    0.000 {method 'take' of 'numpy.ndarray' objects}
+       28    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:260(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:277(_num_features)
+       18    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:233(__next)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:481(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:289(get_namespace)
+        4    0.000    0.000    0.000    0.000 {built-in method posix.close}
+       44    0.000    0.000    0.000    0.000 {built-in method numpy.geterrobj}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1085(_translate_newlines)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/__init__.py:370(_FuncPtr)
+       31    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:490(enter_context)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:36(dyld_env)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:73(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/getlimits.py:484(__new__)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of 're.Pattern' objects}
+        5    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:247(asarray)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:362(is_satisfied_by)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:167(get_annotations)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.waitpid}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
+       58    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2739(name)
+       13    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:172(append)
+       20    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:346(where)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+       30    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3508(_std_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:223(read_magic)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:403(_get_formatdict)
+        2    0.000    0.000    0.000    0.000 {built-in method sys.exc_info}
+       13    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:164(__getitem__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:176(<listcomp>)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:951(_read_bytes)
+       22    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/enum.py:1093(__new__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:159(_commonType)
+        2    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        4    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1233(poll)
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.array}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:896(_parse_flags)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:361(_text_encoding)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:52(dyld_library_path)
+       17    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:153(concatenate)
+       20    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 <frozen os>:1081(__subclasshook__)
+       25    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
+        9    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:426(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/ctypes/macholib/dyld.py:58(dyld_fallback_library_path)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/warnings.py:440(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1987(_get_feature_names)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:267(_is_arraylike)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:202(__exit__)
+        2    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       16    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2831(_min_dispatcher)
+       20    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/warnings.py:487(__exit__)
+        4    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+        3    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:522(_push_cm_exit)
+       20    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2374(_array_equal_dispatcher)
+       23    0.000    0.000    0.000    0.000 {method 'endswith' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:109(__init__)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:602(<genexpr>)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1954(_handle_exitstatus)
+       14    0.000    0.000    0.000    0.000 <frozen codecs>:214(setstate)
+       18    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2416(_all_dispatcher)
+       36    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:2751(kind)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:153(_realType)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:72(<dictcomp>)
+        2    0.000    0.000    0.000    0.000 <frozen codecs>:309(__init__)
+        8    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:268(close)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.all}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:135(_makearray)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1092(__exit__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/Public/codes/denElli/big_matrix_cocluster/coclusterSVD.py:56(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'register' of 'select.poll' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:581(_ensure_no_complex_data)
+        3    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x100bb1600}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:63(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:78(_check_methods)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:434(_get_literal_prefix)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:378(isfunction)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:999(<listcomp>)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:66(__len__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/compat/py3k.py:49(isfileobj)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:456(_exit_wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:286(tell)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:639(_is_extension_array_dtype)
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'bytes' objects}
+       16    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/index_tricks.py:30(_ix__dispatcher)
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:755(_is_wrapper)
+        8    0.000    0.000    0.000    0.000 {built-in method _operator.ge}
+        2    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:591(_check_estimator_name)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:652(<genexpr>)
+        4    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:1080(copyto)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:568(isstring)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+       10    0.000    0.000    0.000    0.000 {built-in method _operator.lt}
+        1    0.000    0.000    0.000    0.000 {built-in method _locale.getencoding}
+        1    0.000    0.000    0.000    0.000 <frozen os>:760(decode)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:282(descr_to_dtype)
+        9    0.000    0.000    0.000    0.000 {built-in method _warnings._filters_mutated}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1232(_argmin_dispatcher)
+        2    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/threading.py:90(RLock)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:249(match)
+        1    0.000    0.000    0.000    0.000 {built-in method select.poll}
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        5    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:170(_check_device_cpu)
+        1    0.000    0.000    0.000    0.000 {method 'count' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2096(_clip_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1120(__del__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:929(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:465(_get_charset_prefix)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1328(_searchsorted_dispatcher)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2508(_cumsum_dispatcher)
+        2    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:79(groups)
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:275(_key_from_fd)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:517(<dictcomp>)
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:296(is_satisfied_by)
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2245(_isclose_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:160(__len__)
+        1    0.000    0.000    0.000    0.000 {method 'rfind' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_parser.py:956(fix_flags)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:130(get_linalg_error_extobj)
+        2    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        3    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:669(result_type)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:268(_cleanup)
+        4    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1239(_remaining_time)
+        1    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 <frozen codecs>:260(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'unregister' of 'select.poll' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        3    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:272(get_map)
+        1    0.000    0.000    0.000    0.000 <attrs generated init big_matrix_cocluster.submatrix.submatrix>:1(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:928(<listcomp>)
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/re/_compiler.py:426(_get_iscased)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.waitstatus_to_exitcode}
+        1    0.000    0.000    0.000    0.000 {built-in method _struct.calcsize}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:203(_assert_stacked_2d)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/_psosx.py:364(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1966(_internal_poll)
+        2    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_io._IOBase' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3649(_var_dispatcher)
+        1    0.000    0.000    0.000    0.000 {built-in method _struct.unpack}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:65(_recreate_cm)
+        1    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:543(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/contextlib.py:450(_create_exit_wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:85(empty_like)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:63(_zeros_like_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:2157(_save_input)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:12(_check_array_api_dispatch)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:1393(may_share_memory)
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 {built-in method _operator.gt}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1311(_on_error_fd_closer)
+        1    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'pop' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:1495(_svd_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/twodim_base.py:230(_diag_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:437(__enter__)
+        1    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.WIFSTOPPED}
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1247(_check_timeout)
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.BufferedReader' objects}
+        2    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/inspect.py:3032(parameters)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2687(_max_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:898(_none_or_positive_arg)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:196(_check_version)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/subprocess.py:1089(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:130(set_additional_attributes)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/selectors.py:199(__enter__)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/psutil/__init__.py:423(pid)
+        1    0.000    0.000    0.000    0.000 /Users/zihanwu/miniforge3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:355(get_version)
+        1    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+
+
