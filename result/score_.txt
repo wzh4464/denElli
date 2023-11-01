@@ -343,3 +343,486 @@ X.shape: (103, 3750)
 subrowI.shape: 42
 subcolJ.shape: 478
 -----
+score time: 0.9464716911315918
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 192
+-----
+score time: 0.6943442821502686
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 164
+-----
+score time: 5.741591691970825
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 478
+-----
+score time: 2.5606250762939453
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 318
+-----
+score time: 0.9469008445739746
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 192
+-----
+score time: 0.7060427665710449
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 164
+-----
+score time: 5.816265106201172
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 478
+-----
+score time: 2.610383987426758
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 318
+-----
+score time: 0.969257116317749
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 192
+-----
+score time: 0.7226955890655518
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 164
+-----
+score time: 5.844167947769165
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 478
+-----
+score time: 2.618638753890991
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 318
+-----
+score time: 0.021701812744140625
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 192
+-----
+score time: 62.00615382194519
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 2598
+-----
+score time: 0.008369922637939453
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 164
+-----
+score time: 0.08330845832824707
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 478
+-----
+score time: 0.0179135799407959
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 318
+-----
+score time: 0.008863449096679688
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 192
+-----
+score time: 62.3734073638916
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 2598
+-----
+score time: 0.0064373016357421875
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 164
+-----
+score time: 0.03798389434814453
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 478
+-----
+score time: 0.017566680908203125
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 318
+-----
+score time: 0.009447097778320312
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 192
+-----
+score time: 63.109861850738525
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 2598
+-----
+score time: 0.006409883499145508
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 164
+-----
+score time: 0.03830838203430176
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 478
+-----
+score time: 0.017889022827148438
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 318
+-----
+score time: 0.9064464569091797
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 192
+score: 0.0022075712344862275
+-----
+score time: 0.558232307434082
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 192
+score: 0.0022075712344862275
+-----
+score time: 0.40912699699401855
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 164
+score: 0.0003725066930576615
+-----
+score time: 3.39790940284729
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 478
+score: 0.0012299185133510804
+-----
+score time: 1.5093467235565186
+X.shape: (103, 3750)
+subrowI.shape: 28
+subcolJ.shape: 318
+score: 0.00037645716746048663
+-----
+score time: 0.5569076538085938
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 192
+score: 0.0009447020608986945
+-----
+score time: 99.66685605049133
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 2598
+score: 7.136626509918198e-05
+-----
+score time: 0.41226649284362793
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 164
+score: 0.0003102715216136698
+-----
+score time: 3.400800943374634
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 478
+score: 0.0006343650708506843
+-----
+score time: 1.5034513473510742
+X.shape: (103, 3750)
+subrowI.shape: 33
+subcolJ.shape: 318
+score: 0.0003124307616558797
+-----
+score time: 0.569664716720581
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 192
+score: 0.001090523633614393
+-----
+score time: 0.4228241443634033
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 164
+score: 0.00021248240953075648
+-----
+score time: 3.406137228012085
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 478
+score: 0.0007632666894132889
+-----
+score time: 1.5341427326202393
+X.shape: (103, 3750)
+subrowI.shape: 42
+subcolJ.shape: 318
+score: 0.0002568002516538659
+-----
+score time: 2.0192513465881348
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----
+score time: 3.0741546154022217
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 90
+score: 0.0008351427149764223
+-----
+score time: 1.7815141677856445
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----
+score time: 3.756098508834839
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 106
+score: 0.0009745314401544691
+-----
+score time: 2.3857526779174805
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 106
+score: 0.0010607435866994974
+-----
+score time: 2.233755111694336
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 90
+score: 0.0006425419930777831
+-----
+score time: 3.6291253566741943
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 106
+score: 0.0010607435866994974
+-----
+score time: 2.6709864139556885
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 90
+score: 0.0006425419930777831
+-----
+score time: 2.2278006076812744
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 94
+score: 0.0010058888929012078
+-----
+score time: 1.2124204635620117
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 66
+score: 0.0009996970720356213
+-----
+score time: 1.3610906600952148
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 90
+score: 0.0006425419930777831
+-----
+score time: 1.3968937397003174
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 66
+score: 0.0008832918666804579
+-----
+score time: 2.4346680641174316
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 90
+score: 0.0007910753996011044
+-----
+score time: 0.7313392162322998
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 66
+score: 0.0009996970720356213
+-----
+score time: 3.257021188735962
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 106
+score: 0.0009745314401544691
+-----
+score time: 3.8879048824310303
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 106
+score: 0.0010607435866994974
+-----
+score time: 2.4438717365264893
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 90
+score: 0.0007910753996011044
+-----
+score time: 2.859355926513672
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 90
+score: 0.0008351427149764223
+-----
+score time: 1.7593183517456055
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 90
+score: 0.0008351427149764223
+-----
+score time: 3.4571533203125
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 106
+score: 0.0010607435866994974
+-----
+score time: 5.312633991241455
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 106
+score: 0.0007680797420314134
+-----
+score time: 1.9611878395080566
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 90
+score: 0.0008351427149764223
+-----
+score time: 0.8586795330047607
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 66
+score: 0.0008832918666804579
+-----
+score time: 0.6751708984375
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----
+score time: 2.091015338897705
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 94
+score: 0.0012683037653989926
+-----
+score time: 2.1034646034240723
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 94
+score: 0.0011337423652487688
+-----
+score time: 1.891953468322754
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 106
+score: 0.0007680797420314134
+-----
+score time: 1.3009436130523682
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 94
+score: 0.0012683037653989926
+-----
+score time: 1.0549139976501465
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 90
+score: 0.0006425419930777831
+-----
+score time: 2.190887451171875
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 106
+score: 0.0007680797420314134
+-----
+score time: 1.212724208831787
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 94
+score: 0.0010058888929012078
+-----
+score time: 0.5586714744567871
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 66
+score: 0.0008832918666804579
+-----
+score time: 1.6100733280181885
+X.shape: (103, 3750)
+subrowI.shape: 11
+subcolJ.shape: 108
+score: 0.0014731781585402004
+-----
+score time: 1.8476934432983398
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 106
+score: 0.0007680797420314134
+-----
+score time: 1.0518958568572998
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 108
+score: 0.0012338211176174951
+-----
+score time: 1.3580293655395508
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 108
+score: 0.0016138449177862668
+-----
+score time: 0.41559624671936035
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----
+score time: 0.15833449363708496
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 66
+score: 0.0009996970720356213
+-----
+score time: 0.48195695877075195
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----
+score time: 0.18285131454467773
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 66
+score: 0.0009996970720356213
+-----
+score time: 0.3527333736419678
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 66
+score: 0.0009996970720356213
+-----
+score time: 1.3120458126068115
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 108
+score: 0.0016138449177862668
+-----
+score time: 1.031282663345337
+X.shape: (103, 3750)
+subrowI.shape: 4
+subcolJ.shape: 108
+score: 0.0012338211176174951
+-----
+score time: 0.25458717346191406
+X.shape: (103, 3750)
+subrowI.shape: 5
+subcolJ.shape: 66
+score: 0.0009745625895798415
+-----

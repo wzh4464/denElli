@@ -1,0 +1,529 @@
+Wed Nov  1 11:21:16 2023    result/profile_binary.txt
+
+         514503093 function calls (514502921 primitive calls) in 553.623 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000  553.623  553.623 {built-in method builtins.exec}
+        1    0.000    0.000  553.623  553.623 <string>:1(<module>)
+        1    0.000    0.000  553.623  553.623 /home/zihan/denElli/example_timebased.py:51(cocluster_timebase)
+        1    0.000    0.000  553.621  553.621 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:71(cocluster)
+        1    0.058    0.058  553.621  553.621 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:118(coclusterAtom)
+        1    0.001    0.001  552.906  552.906 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:420(compute_scoreMat)
+       15  223.906   14.927  552.904   36.860 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:287(score)
+ 64306008  172.055    0.000  316.310    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:2383(norm)
+ 64306008   58.110    0.000   58.110    0.000 {method 'dot' of 'numpy.ndarray' objects}
+ 64306008   45.953    0.000   45.953    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+ 64306010   18.820    0.000   24.954    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:140(isComplexType)
+128612209   13.131    0.000   13.131    0.000 {built-in method builtins.issubclass}
+ 64306008    9.767    0.000    9.767    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:2379(_norm_dispatcher)
+ 64306062    8.244    0.000    8.244    0.000 {built-in method numpy.asarray}
+       30    2.869    0.096    2.869    0.096 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:393(corHelper)
+        2    0.001    0.001    0.422    0.211 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1389(fit)
+        2    0.261    0.131    0.264    0.132 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:602(_kmeans_single_lloyd)
+        1    0.195    0.195    0.197    0.197 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:1499(svd)
+        2    0.000    0.000    0.090    0.045 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:900(_check_mkl_vcomp)
+        2    0.000    0.000    0.090    0.045 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:145(threadpool_info)
+        4    0.000    0.000    0.089    0.022 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:124(_get_threadpool_controller)
+        1    0.000    0.000    0.089    0.089 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:664(__init__)
+        1    0.000    0.000    0.088    0.088 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:815(_load_libraries)
+        1    0.001    0.001    0.088    0.088 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:824(_find_libraries_with_dl_iterate_phdr)
+      230    0.001    0.000    0.068    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:840(match_library_callback)
+      229    0.003    0.000    0.066    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:942(_make_controller_from_path)
+      229    0.000    0.000    0.052    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:393(_realpath)
+      229    0.001    0.000    0.051    0.000 <frozen posixpath>:412(realpath)
+  265/229    0.012    0.000    0.047    0.000 <frozen posixpath>:421(_joinrealpath)
+        2    0.000    0.000    0.047    0.023 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:944(_init_centroids)
+        2    0.001    0.001    0.046    0.023 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:164(_kmeans_plusplus)
+        8    0.001    0.000    0.040    0.005 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/metrics/pairwise.py:331(_euclidean_distances)
+        8    0.003    0.000    0.040    0.005 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/metrics/pairwise.py:504(_euclidean_distances_upcast)
+       30    0.020    0.001    0.038    0.001 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:252(scoreHelper)
+       23    0.027    0.001    0.027    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:156(safe_sparse_dot)
+      223    0.001    0.000    0.024    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)
+      358    0.021    0.000    0.021    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        1    0.000    0.000    0.019    0.019 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:1012(_get_libc)
+      188    0.001    0.000    0.018    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)
+        4    0.001    0.000    0.018    0.004 {built-in method builtins.print}
+     2428    0.011    0.000    0.018    0.000 <frozen posixpath>:71(join)
+        1    0.000    0.000    0.017    0.017 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:1595(_array_str_implementation)
+        1    0.000    0.000    0.016    0.016 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:561(array2string)
+        1    0.000    0.000    0.015    0.015 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:506(wrapper)
+        1    0.000    0.000    0.015    0.015 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:523(_array2string)
+        3    0.000    0.000    0.014    0.005 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:342(__init__)
+        3    0.013    0.004    0.013    0.004 {built-in method _ctypes.dlopen}
+     2423    0.013    0.000    0.013    0.000 {built-in method posix.lstat}
+        1    0.000    0.000    0.012    0.012 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:452(_get_format_function)
+        1    0.000    0.000    0.012    0.012 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/util.py:337(find_library)
+        1    0.001    0.001    0.011    0.011 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/util.py:271(_findSoname_ldconfig)
+        1    0.000    0.000    0.011    0.011 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:411(<lambda>)
+        1    0.000    0.000    0.011    0.011 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:907(__init__)
+        1    0.002    0.002    0.011    0.011 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:934(fillFormat)
+       15    0.000    0.000    0.010    0.001 /home/zihan/denElli/big_matrix_cocluster/bicluster.py:34(__init__)
+       15    0.010    0.001    0.010    0.001 /home/zihan/denElli/big_matrix_cocluster/bicluster.py:50(idxtoLabel)
+        3    0.010    0.003    0.010    0.003 {method 'copy' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.007    0.004 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:106(__init__)
+       57    0.007    0.000    0.007    0.000 {method 'astype' of 'numpy.ndarray' objects}
+       32    0.003    0.000    0.006    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:135(_var)
+        1    0.000    0.000    0.006    0.006 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/__init__.py:173(search)
+       16    0.000    0.000    0.006    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2836(min)
+      223    0.006    0.000    0.006    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)
+       48    0.001    0.000    0.006    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:52(row_norms)
+        2    0.000    0.000    0.005    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:483(_validate_data)
+       48    0.000    0.000    0.005    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/einsumfunc.py:1009(einsum)
+        2    0.001    0.000    0.004    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:629(check_array)
+     3245    0.003    0.000    0.004    0.000 <frozen posixpath>:41(_get_sep)
+       30    0.000    0.000    0.004    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3513(std)
+       48    0.004    0.000    0.004    0.000 {built-in method numpy.core._multiarray_umath.c_einsum}
+        2    0.000    0.000    0.004    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:592(_validate_params)
+       30    0.000    0.000    0.004    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:204(_std)
+        1    0.004    0.004    0.004    0.004 {method 'search' of 're.Pattern' objects}
+        2    0.000    0.000    0.003    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1361(_check_params_vs_input)
+     4623    0.002    0.000    0.003    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.003    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:856(_check_params_vs_input)
+        6    0.000    0.000    0.003    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/extmath.py:1115(stable_cumsum)
+      916    0.002    0.000    0.003    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:987(_check_prefix)
+        2    0.000    0.000    0.003    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:262(_tolerance)
+        2    0.002    0.001    0.003    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1207(check_random_state)
+      229    0.001    0.000    0.003    0.000 <frozen posixpath>:397(abspath)
+     5470    0.003    0.000    0.003    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.003    0.003 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:780(_formatArray)
+        2    0.000    0.000    0.003    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/__init__.py:272(_compile)
+        1    0.001    0.001    0.003    0.003 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:807(__init__)
+    104/1    0.001    0.000    0.003    0.003 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:789(recurser)
+        3    0.000    0.000    0.003    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/npyio.py:475(save)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3654(var)
+        2    0.000    0.000    0.002    0.001 {built-in method sklearn.utils._openmp_helpers._openmp_effective_n_threads}
+       30    0.000    0.000    0.002    0.000 {method 'any' of 'numpy.ndarray' objects}
+      494    0.001    0.000    0.002    0.000 <frozen posixpath>:60(isabs)
+        3    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:168(_asarray_with_order)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:28(validate_parameter_constraints)
+       30    0.000    0.000    0.002    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:55(_any)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:738(compile)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:153(get_params)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:122(_get_param_names)
+        3    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:666(write_array)
+       69    0.002    0.000    0.002    0.000 {built-in method numpy.zeros}
+       24    0.002    0.000    0.002    0.000 {built-in method io.open}
+       79    0.000    0.000    0.002    0.000 <frozen abc>:117(__instancecheck__)
+        6    0.000    0.000    0.002    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2249(isclose)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:3278(signature)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/joblib/parallel.py:615(cpu_count)
+       79    0.001    0.000    0.002    0.000 {built-in method _abc._abc_instancecheck}
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:3024(from_callable)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:83(cpu_count)
+      182    0.000    0.000    0.002    0.000 {built-in method builtins.getattr}
+        1    0.001    0.001    0.002    0.002 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1789(_execute_child)
+        2    0.000    0.000    0.002    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:220(_cpu_count_user)
+        2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2428(_signature_from_callable)
+        2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:972(parse)
+        2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:148(_cpu_count_cgroup)
+        4    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:675(info)
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/npyio.py:282(load)
+     2512    0.001    0.000    0.001    0.000 {method 'partition' of 'str' objects}
+      3/2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:449(_parse_sub)
+     2434    0.001    0.000    0.001    0.000 {method 'endswith' of 'str' objects}
+     3943    0.001    0.000    0.001    0.000 {built-in method posix.fspath}
+       19    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:386(__getattr__)
+      229    0.001    0.000    0.001    0.000 <frozen posixpath>:140(basename)
+        4    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:677(<listcomp>)
+       30    0.001    0.000    0.001    0.000 {method 'rand' of 'numpy.random.mtrand.RandomState' objects}
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:738(read_array)
+        8    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:115(info)
+       19    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/index_tricks.py:34(ix_)
+       24    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:53(_wrapfunc)
+      229    0.001    0.000    0.001    0.000 <frozen posixpath>:389(normpath)
+       18    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:74(<listcomp>)
+       19    0.001    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:393(__getitem__)
+        2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/fixes.py:134(threadpool_limits)
+    28/26    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:103(make_constraint)
+      3/2    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:509(_parse)
+        1    0.001    0.001    0.001    0.001 {built-in method numpy.fromfile}
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:718(limit)
+        5    0.001    0.000    0.001    0.000 {method 'read' of '_io.BufferedReader' objects}
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:429(__init__)
+      103    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:753(_extendLine_pretty)
+        3    0.001    0.000    0.001    0.000 {method 'tofile' of 'numpy.ndarray' objects}
+    12007    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+       11    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:430(__enter__)
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2333(_signature_from_function)
+        8    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:133(num_threads)
+    54/51    0.000    0.000    0.001    0.000 <frozen abc>:121(__subclasscheck__)
+     2422    0.001    0.000    0.001    0.000 {built-in method _stat.S_ISLNK}
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2692(max)
+        4    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:166(get_num_threads)
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:96(_assert_all_finite)
+    54/51    0.001    0.000    0.001    0.000 {built-in method _abc._abc_subclasscheck}
+      103    0.001    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:1018(__call__)
+       40    0.000    0.000    0.001    0.000 <frozen genericpath>:16(exists)
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:997(_warn_if_incompatible_openmp)
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:78(inner)
+       73    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:287(helper)
+        6    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2330(within_tol)
+        2    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:571(_code)
+       77    0.000    0.000    0.001    0.000 <frozen posixpath>:100(split)
+       22    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:33(seterr)
+       21    0.000    0.000    0.001    0.000 {method 'sum' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/textwrap.py:419(dedent)
+        1    0.000    0.000    0.001    0.001 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:64(_make_options_dict)
+        6    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2512(cumsum)
+      104    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:989(<genexpr>)
+       40    0.001    0.000    0.001    0.000 {built-in method posix.stat}
+       21    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:47(_sum)
+        2    0.000    0.000    0.001    0.000 <frozen os>:773(getenv)
+      146    0.000    0.000    0.001    0.000 {built-in method builtins.next}
+       18    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2421(all)
+        6    0.001    0.000    0.001    0.000 {method 'cumsum' of 'numpy.ndarray' objects}
+        4    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)
+      103    0.000    0.000    0.001    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:739(_extendLine)
+        2    0.001    0.000    0.001    0.000 {function SeedSequence.generate_state at 0x7f7e269805e0}
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:414(_write_array_header)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:555(is_satisfied_by)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/__init__.py:178(sub)
+       73    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:132(__enter__)
+       10    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:467(is_satisfied_by)
+       22    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+        4    0.000    0.000    0.000    0.000 <frozen _collections_abc>:771(get)
+       73    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:104(__init__)
+       15    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2378(array_equal)
+        2    0.000    0.000    0.000    0.000 {method 'mean' of 'numpy.ndarray' objects}
+       73    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:141(__exit__)
+      144    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:452(_no_nep50_warning)
+       47    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/__init__.py:728(gen_batches)
+      229    0.000    0.000    0.000    0.000 {built-in method posix._path_normpath}
+      6/2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:37(_compile)
+       17    0.000    0.000    0.000    0.000 <frozen posixpath>:150(dirname)
+       36    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:187(get_version)
+      109    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/scipy/sparse/_base.py:1301(isspmatrix)
+      206    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.dragon4_positional}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+      104    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:984(<genexpr>)
+        4    0.000    0.000    0.000    0.000 <frozen os>:674(__getitem__)
+       24    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.000    0.000 {built-in method _posixsubprocess.fork_exec}
+       10    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:446(__contains__)
+       95    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)
+       20    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2686(__init__)
+       38    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numerictypes.py:357(issubdtype)
+       33    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:61(_all)
+1051/1045    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       91    0.000    0.000    0.000    0.000 {built-in method numpy.asanyarray}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1686(_get_handles)
+       18    0.000    0.000    0.000    0.000 {method 'all' of 'numpy.generic' objects}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1332(searchsorted)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:390(_wrap_header_guess_version)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1716(_check_sample_weight)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1282(_close_pipe_fds)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1092(__exit__)
+       36    0.000    0.000    0.000    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:176(set_num_threads)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:366(_wrap_header)
+        1    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:440(__exit__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:450(restore_original_limits)
+        6    0.000    0.000    0.000    0.000 {method 'searchsorted' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:403(_get_formatdict)
+        6    0.000    0.000    0.000    0.000 {method 'uniform' of 'numpy.random.mtrand.RandomState' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:522(__init__)
+       22    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:132(geterr)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/twodim_base.py:234(diag)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/util.py:328(_findLib_prefix)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1259(wait)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:162(set_additional_attributes)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:262(_is_arraylike_not_scalar)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:338(header_data_from_array_1_0)
+        4    0.000    0.000    0.000    0.000 <frozen codecs>:309(__init__)
+      322    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:153(_realType)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1236(argmin)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/warnings.py:466(__enter__)
+      240    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/einsumfunc.py:1001(_einsum_dispatcher)
+       24    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/enum.py:686(__call__)
+       36    0.000    0.000    0.000    0.000 {built-in method posix.readlink}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:1855(isscalar)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:67(zeros_like)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:509(_compile_info)
+       76    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numerictypes.py:283(issubclass_)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:547(_set_threadpool_limits)
+       15    0.000    0.000    0.000    0.000 {method 'all' of 'numpy.ndarray' objects}
+       11    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:435(__exit__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:2014(_wait)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/random.py:800(getrandbits)
+        6    0.000    0.000    0.000    0.000 {method 'take' of 'numpy.ndarray' objects}
+      233    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:274(full)
+        5    0.000    0.000    0.000    0.000 {built-in method _struct.calcsize}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2100(clip)
+      104    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:993(<genexpr>)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:243(dtype_to_descr)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:320(_num_samples)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:90(get_namespace)
+      229    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       43    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:254(get)
+        1    0.000    0.000    0.000    0.000 {built-in method _ctypes.POINTER}
+        4    0.000    0.000    0.000    0.000 {method 'read' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:220(_get_architecture)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:72(CFUNCTYPE)
+       63    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:164(__getitem__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:136(ones)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:587(_read_array_header)
+        2    0.000    0.000    0.000    0.000 <frozen os>:1081(__subclasshook__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:547(__init__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:735(unwrap)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:30(get_config)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1335(__init__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/warnings.py:165(simplefilter)
+        6    0.000    0.000    0.000    0.000 {method 'clip' of 'numpy.ndarray' objects}
+        6    0.000    0.000    0.000    0.000 {method 'argmin' of 'numpy.ndarray' objects}
+      7/3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:174(getwidth)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+        2    0.000    0.000    0.000    0.000 {method 'randint' of 'numpy.random.mtrand.RandomState' objects}
+      104    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:994(<genexpr>)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/compat/py3k.py:49(isfileobj)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:351(set_num_threads)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:398(__init__)
+       16    0.000    0.000    0.000    0.000 {built-in method numpy.empty}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/enum.py:1509(__and__)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:109(__init__)
+       48    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:233(__next)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:224(__init__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/warnings.py:181(_add_filter)
+       10    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:462(_has_valid_type)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:184(_cpu_count_affinity)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2972(__init__)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_methods.py:90(_clip)
+       24    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/enum.py:1091(__new__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:496(_check_params)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/utils.py:1027(safe_eval)
+      103    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:2001(_try_wait)
+       59    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:837(__init__)
+      232    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ast.py:54(literal_eval)
+       39    0.000    0.000    0.000    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+        6    0.000    0.000    0.000    0.000 <frozen os>:806(fsencode)
+        4    0.000    0.000    0.000    0.000 <frozen codecs>:319(decode)
+       94    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+       72    0.000    0.000    0.000    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.waitpid}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:530(is_satisfied_by)
+       35    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:172(append)
+        9    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/_ufunc_config.py:426(__init__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:348(_check_n_features)
+        9    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:63(__getattr__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:94(closegroup)
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:136(<listcomp>)
+       72    0.000    0.000    0.000    0.000 {method 'reset' of '_contextvars.ContextVar' objects}
+       36    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:378(isfunction)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:241(_optimize_charset)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/utils.py:1151(drop_metadata)
+      188    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)
+       13    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:394(_check_feature_names)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/__init__.py:253(escape)
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:580(__init__)
+        8    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:407(_check_params)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.uname}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:531(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:913(<listcomp>)
+       22    0.000    0.000    0.000    0.000 {built-in method numpy.seterrobj}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:204(_get_threading_layer)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:347(get_num_threads)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:588(is_satisfied_by)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:460(__init__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:268(_cleanup)
+      103    0.000    0.000    0.000    0.000 {method 'splitlines' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:546(__exit__)
+        1    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.repr}
+        5    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_array_api.py:70(asarray)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:369(_escape)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/_config.py:22(_get_threadlocal_config)
+       12    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:258(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.cpu_count}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:589(<genexpr>)
+       22    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:3019(<genexpr>)
+       28    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:226(__init__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ast.py:33(parse)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1135(_get_devnull)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of 're.Pattern' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+       44    0.000    0.000    0.000    0.000 {built-in method numpy.geterrobj}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:267(_num_features)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:370(_FuncPtr)
+       30    0.000    0.000    0.000    0.000 {built-in method time.time}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:509(callback)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.urandom}
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:396(_simple)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:201(magic)
+        4    0.000    0.000    0.000    0.000 <frozen os>:756(encode)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:167(get_annotations)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:434(_get_literal_prefix)
+       78    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+        9    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:286(tell)
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.array}
+        3    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1120(__del__)
+        2    0.000    0.000    0.000    0.000 <frozen _collections_abc>:78(_check_methods)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.pipe}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:328(is_satisfied_by)
+       13    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:160(__len__)
+       14    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:249(match)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:1870(_get_feature_names)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:214(_compile_charset)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.sched_getaffinity}
+       19    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       15    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:446(_uniq)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/base.py:151(<listcomp>)
+        4    0.000    0.000    0.000    0.000 {built-in method posix.close}
+       58    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2739(name)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:568(isstring)
+     10/1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ast.py:84(_convert)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/warnings.py:440(__init__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:159(_commonType)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.open}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:257(_is_arraylike)
+       18    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2416(_all_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:82(opengroup)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:73(__init__)
+       30    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3508(_std_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:490(enter_context)
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:564(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/warnings.py:487(__exit__)
+       30    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+       36    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:2751(kind)
+       15    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:346(where)
+        1    0.000    0.000    0.000    0.000 <frozen os>:818(fsdecode)
+       20    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1954(_handle_exitstatus)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:896(_parse_flags)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:465(_get_charset_prefix)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:223(read_magic)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:571(_ensure_no_complex_data)
+       20    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:79(groups)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:951(_read_bytes)
+       15    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2374(_array_equal_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:956(fix_flags)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:527(_push_exit_callback)
+        3    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:456(_exit_wrapper)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/validation.py:581(_check_estimator_name)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:522(_push_cm_exit)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:755(_is_wrapper)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.read}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1232(_argmin_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:135(_makearray)
+        8    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:1080(copyto)
+       17    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:153(concatenate)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2508(_cumsum_dispatcher)
+        4    0.000    0.000    0.000    0.000 <frozen codecs>:260(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.all}
+       10    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:309(_class_escape)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getcwd}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:196(_check_version)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:72(<dictcomp>)
+       16    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2831(_min_dispatcher)
+        8    0.000    0.000    0.000    0.000 {built-in method _operator.ge}
+       10    0.000    0.000    0.000    0.000 {built-in method _operator.lt}
+        4    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       19    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/index_tricks.py:30(_ix__dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/__init__.py:101(CFunctionType)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:2245(_isclose_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:282(descr_to_dtype)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:669(result_type)
+        6    0.000    0.000    0.000    0.000 {built-in method _warnings._filters_mutated}
+        3    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:426(_get_iscased)
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1328(_searchsorted_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/utils/_param_validation.py:262(is_satisfied_by)
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x560d647bd060}
+        3    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/format.py:652(<genexpr>)
+       12    0.000    0.000    0.000    0.000 <frozen codecs>:214(setstate)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:454(_create_cb_wrapper)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_parser.py:168(__setitem__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:517(<dictcomp>)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:912(<listcomp>)
+        2    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:999(<listcomp>)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        6    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2096(_clip_dispatcher)
+        4    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'rfind' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        3    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.BufferedWriter' objects}
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method sys.exc_info}
+        2    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        1    0.000    0.000    0.000    0.000 /home/zihan/denElli/big_matrix_cocluster/coclusterSVD.py:56(__init__)
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:130(get_linalg_error_extobj)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/re/_compiler.py:31(_combine_flags)
+        1    0.000    0.000    0.000    0.000 {method 'group' of 're.Match' objects}
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        3    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:203(_assert_stacked_2d)
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1311(_on_error_fd_closer)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3649(_var_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:437(__enter__)
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/inspect.py:3032(parameters)
+        1    0.000    0.000    0.000    0.000 {method 'rstrip' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:1393(may_share_memory)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/numeric.py:63(_zeros_like_dispatcher)
+        3    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/npyio.py:471(_save_dispatcher)
+        2    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/lib/twodim_base.py:230(_diag_dispatcher)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2687(_max_dispatcher)
+        1    0.000    0.000    0.000    0.000 {built-in method _struct.unpack}
+        1    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:543(__enter__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/arrayprint.py:898(_none_or_positive_arg)
+        2    0.000    0.000    0.000    0.000 {built-in method _operator.gt}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1966(_internal_poll)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:450(_create_exit_wrapper)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.waitstatus_to_exitcode}
+        1    0.000    0.000    0.000    0.000 <attrs generated init big_matrix_cocluster.submatrix.submatrix>:1(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.WIFSTOPPED}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/ctypes/util.py:172(_get_soname)
+        1    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+        3    0.000    0.000    0.000    0.000 {method 'pop' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/contextlib.py:65(_recreate_cm)
+        1    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/core/multiarray.py:85(empty_like)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:355(get_version)
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/subprocess.py:1089(__enter__)
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/threadpoolctl.py:130(set_additional_attributes)
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 /home/zihan/miniconda3/envs/cocluster/lib/python3.11/site-packages/numpy/linalg/linalg.py:1495(_svd_dispatcher)
+        1    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+
+
