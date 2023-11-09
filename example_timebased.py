@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Wednesday, 1st November 2023 9:57:54 pm
+Last Modified: Wednesday, 8th November 2023 10:14:09 am
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -67,7 +67,11 @@ if __name__ == "__main__":
 
     def cocluster(i):
         A = np.load('data/nturgb/video_0.npy')
-        # A (103, 25, 150)
+        # A (103, 25, 150) 103, 25, 25
+        # difference
+        # high-order area
+
+        # signature method Esig IIsignature
 
         A = A[0, :, :]
         coclusterI = ccSVD.coclusterer(
@@ -101,7 +105,7 @@ if __name__ == "__main__":
         # save cprofile result
         import pstats
         # FileNotFoundError: [Errno 2] No such file or directory: 'result/profile.txt'
-        
+
         p = pstats.Stats('result/profile_svd.txt')
         p.sort_stats('cumulative').print_stats(10)
 
