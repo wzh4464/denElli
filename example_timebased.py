@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Saturday, 4th November 2023 9:41:49 pm
+Last Modified: Wednesday, 15th November 2023 4:30:53 pm
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -26,6 +26,7 @@ import time
 import os
 import sys
 from sendEmail import Email
+from PhantomDanceLoader import PhantomDanceLoader
 
 DEBUG = False
 
@@ -93,17 +94,26 @@ def main():
         p.join()
         print('Done!')
 
+def mainPhantomDanceExample():
+    danceLoader = PhantomDanceLoader('data/example.json', signatureOrder=5)
+    sigatures = danceLoader.signatures
 
 if __name__ == "__main__":
-    finisherEmail = Email()
+    emailorNot = False
+    if emailorNot:
+        finisherEmail = Email()
     try:
-        main()
+        mainPhantomDanceExample()
     except Exception as e:
-        finisherEmail.setContent(str(e))
-        finisherEmail.setSubject('Error in example_timebased.py')
-        finisherEmail.send()
+        if emailorNot:
+            finisherEmail.setContent(str(e))
+            finisherEmail.setSubject('Error in example_timebased.py')
+            finisherEmail.send()
+        else:
+            print(e)
         raise e
     else:
-        finisherEmail.setContent('Finished')
-        finisherEmail.setSubject('Finished example_timebased.py')
-        finisherEmail.send()
+        if emailorNot:
+            finisherEmail.setContent('Finished')
+            finisherEmail.setSubject('Finished example_timebased.py')
+            finisherEmail.send()

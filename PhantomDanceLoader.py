@@ -3,12 +3,13 @@ File: /PhantomDanceLoader.py
 Created Date: Tuesday November 14th 2023
 Author: Zihan
 -----
-Last Modified: Wednesday, 15th November 2023 3:59:57 pm
+Last Modified: Wednesday, 15th November 2023 4:32:13 pm
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
 Date      		By   	Comments
 ----------		------	---------------------------------------------------------
+15-11-2023		Zihan	list to array in genSignature(); Order of signature in __init__
 15-11-2023		Zihan	pack the code into a class
 14-11-2023		Zihan	init, read `example.json` and transform it to numpy array (6408, 99)
 '''
@@ -43,7 +44,7 @@ class PhantomDanceLoader(object):
         loader.load()
     """
 
-    def __init__(self, json_path):
+    def __init__(self, json_path, *args, **kwargs):
         self.json_path = json_path
         self.data = None
         self.bone_names = None
@@ -52,8 +53,10 @@ class PhantomDanceLoader(object):
         self.rotations_flattened = None
         self.signatures = None
         self.featureMat = None
-        self.signatureOrder = None
-        self.signatures = None
+        if kwargs.get('signatureOrder'):
+            self.signatureOrder = kwargs.get('signatureOrder')
+        else:
+            self.signatureOrder = 2
         self.load()
         self.genFeatureMat()
         self.genSignature()
@@ -100,8 +103,9 @@ class PhantomDanceLoader(object):
         """
         if kwargs.get('signatureOrder') is None:
             signatureOrder = self.signatureOrder
-        self.signatures = [iisignature.sig(
+        signatures = [iisignature.sig(
             frame, signatureOrder) for frame in self.rotations]
+        self.signatures = np.array(signatures)
         
 class PhatomDanceDatasetLoader(object):
     '''
