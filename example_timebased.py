@@ -3,7 +3,7 @@ File: /example_timebased.py
 Created Date: Monday October 30th 2023
 Author: Zihan
 -----
-Last Modified: Wednesday, 15th November 2023 4:30:53 pm
+Last Modified: Wednesday, 15th November 2023 4:56:57 pm
 Modified By: the developer formerly known as Zihan at <wzh4464@gmail.com>
 -----
 HISTORY:
@@ -14,8 +14,10 @@ Date      		By   	Comments
 30-10-2023		Zihan	tpdm
 '''
 
+
 import big_matrix_cocluster.coclusterSVD as ccSVD
 import big_matrix_cocluster.bicluster as bc
+import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 # Pool
@@ -97,6 +99,23 @@ def main():
 def mainPhantomDanceExample():
     danceLoader = PhantomDanceLoader('data/example.json', signatureOrder=5)
     sigatures = danceLoader.signatures
+    coclusterer = ccSVD.coclusterer(sigatures, sigatures.shape[0], sigatures.shape[1], debug=False)
+    PARRLEL = True
+    if not PARRLEL:
+        for i, j in itertools.product(range(1, 5), range(1, 5)):
+            coclusterer.cocluster(10e-2, i, j, False)
+            coclusterer.printBiclusterList(
+                save=True,
+                path=f'result/phantomDanceExample/example_{str(i)}_{str(j)}.txt',
+            )
+    else:
+        poolArgList = [(10e-2, i, j, True) for i, j in itertools.product(range(5, 20), range(5, 20))]
+        with mp.Pool(mp.cpu_count()-4) as p:
+            results = list(
+                tqdm(p.imap(coclusterer.cocluster_List, poolArgList), total=len(poolArgList)))
+
+        p.join()
+        print('Done!')
 
 if __name__ == "__main__":
     emailorNot = False
@@ -109,8 +128,6 @@ if __name__ == "__main__":
             finisherEmail.setContent(str(e))
             finisherEmail.setSubject('Error in example_timebased.py')
             finisherEmail.send()
-        else:
-            print(e)
         raise e
     else:
         if emailorNot:
